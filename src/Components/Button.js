@@ -1,10 +1,10 @@
 import React from "react";
 
-function Button(props) {
+function Button({fruits}) {
     return (
         <div>
-          <button>{props.text}</button>
-          <p>This is {props.text} which is {props.color} in color</p>
+          <button style={{backgroundColor: fruits[1], color: fruits[2]}}>{fruits[0]}</button>
+          {/*<p>This is {text} which is {color} in color</p>*/}
         </div>
     );
 }
