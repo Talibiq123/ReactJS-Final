@@ -3,7 +3,7 @@ import './footer.css';
 function Footer() {
     return (
         <div className='footer'>
-            <h1>2023 Abhishek Shankar Choudhary. Feel free to copy.</h1>
+            <h1>&#169; 2023 Abhishek Shankar Choudhary. Feel free to copy.</h1>
             <ul>
                 <li><a href='https://www.linkedin.com/'>LinkedIn</a></li>
                 <li><a href='https://www.facebook.com/'>Facebook</a></li>
