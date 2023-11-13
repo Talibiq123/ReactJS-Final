@@ -1,0 +1,15 @@
+.about h1 {
+    text-align: center;
+    margin: 10px auto 10px;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.about p {
+    font-size: 18px;
+}
