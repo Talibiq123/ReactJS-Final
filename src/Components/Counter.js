@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import { GrPowerReset } from "react-icons/gr";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -17,22 +19,22 @@ const Counter = () => {
   }
   return (
     <div style={{ marginTop: "25px" }}>
-      <p>Count = {count}</p>
+      <h1>Count = {count}</h1>
       <br />
       <button
         onClick={increment}
-        style={{ marginTop: "10px", marginRight: "10px" }}
+        style={{ marginTop: "10px"}}
       >
-        increment
+        {<FaPlus />}
       </button>
       <button
         onClick={decrement}
-        style={{ marginTop: "10px", marginRight: "10px" }}
+        style={{ marginTop: "10px"}}
       >
-        decrement
+        {<FaMinus />}
       </button>
       <button onClick={reset} style={{ marginTop: "10px" }}>
-        reset
+        {<GrPowerReset />}
       </button>
     </div>
   );
