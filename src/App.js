@@ -1,12 +1,12 @@
 import React from 'react';
-import State from './Components/State';
+import Counter from './Components/Counter';
 
 
 function App() {
 
     return (
         <div>
-            <State></State>
+            <Counter></Counter>
         </div>
     )
 }
