@@ -1,12 +1,12 @@
 import React from 'react';
-import Counter from './Components/Counter';
+import SimpleFrom from './Components/SimpleForm';
 
 
 function App() {
 
     return (
         <div>
-            <Counter></Counter>
+            <SimpleFrom></SimpleFrom>
         </div>
     )
 }

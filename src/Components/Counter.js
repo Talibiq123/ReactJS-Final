@@ -11,7 +11,8 @@ const Counter = () => {
   }
 
   function decrement() {
-    setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
+    // setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
+    setCount((count) => (count > 0 ? count - 1 : 0));
   }
 
   function reset() {
