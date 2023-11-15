@@ -1,12 +1,12 @@
 import React from 'react';
-import SimpleFrom from './Components/SimpleForm';
+import SimpleForm from './Components/SimpleForm';
 
 
 function App() {
 
     return (
         <div>
-            <SimpleFrom></SimpleFrom>
+            <SimpleForm></SimpleForm>
         </div>
     )
 }
