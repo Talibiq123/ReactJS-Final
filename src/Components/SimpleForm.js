@@ -3,11 +3,11 @@ import React, { useState } from "react";
 function SimpleForm() {
     let [name, setName] = useState("");
 
-    console.log("value after onClick", name);
+    console.log("Name from useState", name);
 
     function manageName(event) {
-        console.log("value before onClick", name);
-        setName(event.target.value);
+        console.log("Your types input", event.target.value);
+        setName(event.target.value.toUpperCase());
         
     }
 
@@ -18,9 +18,9 @@ function SimpleForm() {
     return (
         <div>
             <label htmlFor="name">Enter You Name :</label><br />
-            <input type="text" placeholder="Enter Your Name" onChange={manageName} value={name} />
+            <input type="text" placeholder="Enter Your Name" onChange={manageName} value={name} /> {/*value={name} for delete name from input box */}
             <button type="text" onClick={clearData}>Clear</button>
-            <h1>{name.toUpperCase}</h1>
+            <h1>{name}</h1>
         </div>
     );
 }
