@@ -1,12 +1,12 @@
 import React from 'react';
-import SimpleForm from './Components/SimpleForm';
+import StateWithArray from './Components/StateWithArray';
 
 
 function App() {
 
     return (
         <div>
-            <SimpleForm></SimpleForm>
+            <StateWithArray></StateWithArray>
         </div>
     )
 }
