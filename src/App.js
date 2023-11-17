@@ -1,12 +1,12 @@
 import React from 'react';
-import StateWithArray from './Components/StateWithArray';
+import FormValidation from './Components/FormValidation';
 
 
 function App() {
 
     return (
         <div>
-            <StateWithArray></StateWithArray>
+            <FormValidation></FormValidation>
         </div>
     )
 }

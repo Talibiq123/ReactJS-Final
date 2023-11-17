@@ -9,11 +9,12 @@ function StateWithArray() {
 
     function addToFavourite() {
         setFavorites([...favorites, fruit]);
+        setfruit("");
     }
 
     return (
         <div>
-            <input type="text" placeholder="Enter favorites fruits" onChange={(event) => setfruit(event.target.value)}/>
+            <input type="text" placeholder="Enter favorites fruits" onChange={(event) => setfruit(event.target.value)} value={fruit}/>
             <button onClick={addToFavourite}>Add to favorites</button>
 
             <h1>{favorites.join(", ")}</h1>
