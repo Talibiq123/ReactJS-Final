@@ -17,7 +17,7 @@
         if (user.name.length < 3 || user.email.length > 30) {
             setSuccess("");
             return setError("Name should be min 3 char and max 30 charf");
-        } else if (user.email.includes('@' && user.email.includes('.'))) {
+        } else if (!user.email.includes('@') || !user.email.includes('.')) {
             setSuccess("");
             return setError("Email should contain @ and . ");
         } else if (user.password.length < 8 || user.password.length > 15) {
