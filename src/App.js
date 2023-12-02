@@ -1,12 +1,14 @@
 import React from 'react';
-import FormValidation from './Components/FormValidation';
+// import EffectBasics from './Components/UseEffect/EffectBasics';
+import LiveSearching from './Components/UseEffect/LiveSearching';
 
 
 function App() {
 
     return (
         <div>
-            <FormValidation></FormValidation>
+            {/* <EffectBasics></EffectBasics> */}
+            <LiveSearching />
         </div>
     )
 }
