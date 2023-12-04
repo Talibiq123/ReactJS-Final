@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const countries = [
     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua & Deps",
@@ -17,8 +17,24 @@ const countries = [
 
 function LiveSearching() {
     let [search, setSearch] = useState("");
+    let [filterCounteries, setFilterCountries] = useState(countries);
 
 
+    // function implementSubmit() {
+    //     setFilterCountries(countries.filter((country) => {
+    //         return country.toLowerCase().includes(search.toLowerCase());
+    //     }))
+    // }
+
+    useEffect(() => {
+        search===""? setFilterCountries(countries) :
+        (setFilterCountries(countries.filter((country) => country.toLowerCase().includes(search.toLowerCase()))));
+    }, [search])
+
+
+    // function implementSubmit() {
+    //     setFilterCountries(filterCounteries.filter((country) => country.toLowerCase().includes(search.toLowerCase()))), [search]
+    // }
 
     return (
         <div>
@@ -36,7 +52,7 @@ function LiveSearching() {
             {/* <p>{countries.join(", ")}</p> */}
 
             {
-                countries.map((country) => (
+                filterCounteries.map((country) => (
                     <p style={{
                         width: '100px',
                         border: '1px solid black',
