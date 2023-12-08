@@ -1,12 +1,12 @@
 import React from 'react';
-import Practice from './Components/Practice.js';
-
+import Auth from "./Components/Auth/Auth.js";
+import "./index.css";
 
 function App() {
 
     return (
         <div>
-            <Practice />
+            <Auth />
         </div>
     )
 }
