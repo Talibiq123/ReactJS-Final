@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css";
-import Hello from './Components/useContext/Hello.js';
-import CricketContext from './Components/useContext/CricketContext.js';
+import Cricket from './Components/Cricket.js';
+// import Hello from './Components/useContext/Hello.js';
 
 
 
@@ -9,8 +9,8 @@ function App() {
 
     return (
         <div>
-            <Hello />
-            <CricketContext />
+            {/* <Hello /> */}
+            <Cricket />
         </div>
     )
 }

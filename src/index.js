@@ -3,6 +3,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.js';
 import './index.css';
+import CricketProvider from './Components/useContext/CricketProvider.js';
 
 
 
@@ -14,4 +15,8 @@ import './index.css';
 const root = 
 createRoot(document.getElementById('root'));
 
-root.render(<App />);
+root.render(
+    <CricketProvider>
+        <App />
+    </CricketProvider>
+);
