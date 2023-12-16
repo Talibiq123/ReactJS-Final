@@ -3,7 +3,7 @@ import React, {useContext} from "react";
 import CricketContext from "./useContext/CricketContext.js";
 
 const Cricket = () => {
-    let [cricketer, setCricketer] = useContext(CricketContext);
+    let {cricketer, setCricketer} = useContext(CricketContext);
     // console.log(useContext(CricketContext));
 
     function updateWicket() {

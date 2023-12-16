@@ -8,13 +8,12 @@ function CricketProvider(props) {
         runs: 6484,
         wickets: 46
     })
-    let count = 0;
+    // let count = 0;
 
     return (
         <CricketContext.Provider value={{
             cricketer: cricketer, 
             setCricketer: setCricketer,
-            count: count
         }}>
             {
                 props.children 
